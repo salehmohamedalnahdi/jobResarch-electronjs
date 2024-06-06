@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" href="../common/style.css">
+    <title> welcom to Create Page </title>
+ 
+  
+  </head>
+ <body class="">
+  <nav >
+    <div class="title-signup">
+      <h1>Welcome To Job Research</h1>
+      <a  href="#">
+          <h2>login</h2>
+      </a>
+      <a  href="#">
+          <h2>signup</h2>
+      </a>
+      </div>
+     <div class="pages">
+     <a  href="home.html">
+          <h2 >Home</h2>
+      </a>
+      <a  href="#">
+          <h2>About</h2>
+      </a>
+      <a  href="create.html">
+          <h2>Create Job</h2>
+      </a>
+     </div>
+    </nav>
+
+    <div class="content-form">
+      <form class="form" method="post">
+        <input id="name" placeholder="Type your Name"  type="text"  >
+        <input id="email" placeholder="Type your Email"  type="text" >
+        <input id="cv" placeholder="Type URL Of CV: " type="text">
+        <button id="submitApply" class="submit" type="submit" onClick="(event)=>HandleApply(event)">Submit</button>
+     </form>
+    </div>
+  <footer >
+    <p></p>
+  </footer>
+  <script src="./createApply.js"></script>
+  <!-- <script src="../../dist/bundle.js"></script> -->
+</body>
+
+  </html>
